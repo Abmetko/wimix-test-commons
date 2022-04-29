@@ -18,6 +18,7 @@
     <modules>
         <module>wimix-test-commons-config</module>
         <module>wimix-test-commons-utils</module>
+        <module>wimix-test-commons-pom</module>
     </modules>
 
     <dependencyManagement>
