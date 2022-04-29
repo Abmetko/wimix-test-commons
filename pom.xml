@@ -18,11 +18,22 @@
     <modules>
         <module>wimix-test-commons-config</module>
         <module>wimix-test-commons-utils</module>
-        <module>wimix-test-commons-pom</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.wimix.test.commons</groupId>
+                <artifactId>wimix-test-commons-config</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wimix.test.commons</groupId>
+                <artifactId>wimix-test-commons-utils</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
             <dependency>
                 <groupId>org.awaitility</groupId>
