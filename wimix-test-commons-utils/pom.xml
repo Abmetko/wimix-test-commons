@@ -3,6 +3,7 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.wimix.test.commons</groupId>
         <artifactId>wimix-test-commons</artifactId>
@@ -10,12 +11,19 @@
     </parent>
 
     <artifactId>wimix-test-commons-utils</artifactId>
+    <packaging>jar</packaging>
 
     <version>1.0-SNAPSHOT</version>
     <name>wimix-test-commons-utils</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
+        <dependency>
+            <groupId>com.wimix.test.commons</groupId>
+            <artifactId>wimix-test-commons-config</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
         <dependency>
             <groupId>org.awaitility</groupId>
@@ -137,12 +145,6 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.wimix.test.commons</groupId>
-            <artifactId>wimix-test-commons-config</artifactId>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

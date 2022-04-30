@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>wimix-test-commons-config</artifactId>
+    <packaging>jar</packaging>
 
     <version>1.0-SNAPSHOT</version>
     <name>wimix-test-commons-config</name>
