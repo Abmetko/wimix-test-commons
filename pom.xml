@@ -18,22 +18,11 @@
     <modules>
         <module>wimix-test-commons-config</module>
         <module>wimix-test-commons-utils</module>
+        <module>packaging</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.wimix.test.commons</groupId>
-                <artifactId>wimix-test-commons-config</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.wimix.test.commons</groupId>
-                <artifactId>wimix-test-commons-utils</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
             <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
             <dependency>
                 <groupId>org.awaitility</groupId>
@@ -181,25 +170,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <id>build-package</id>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <phase>package</phase>
-                        <configuration>
-                            <descriptors>
-                                <descriptor>assembly.xml</descriptor>
-                            </descriptors>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M5</version>
